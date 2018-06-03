@@ -2,4 +2,4 @@
 CHALLENGETYPE="dns-01"
 
 # Script to execute the DNS challenge and run after cert generation
-HOOK="/etc/dehydrated/config/hook.sh"
+HOOK="${BASEDIR}/hook.sh"
