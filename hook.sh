@@ -8,16 +8,16 @@ set -e
 set -u
 set -o pipefail
 
-domain="your-domain"
-token="your-token"
+DOMAIN="hass-jos.duckdns.org"
+TOKEN="746e18cc-014d-4b44-84db-1849472c00ea"
 
 case "$1" in
     "deploy_challenge")
-        curl "https://www.duckdns.org/update?domains=$domain&token=$token&txt=$4"
+        curl "https://www.duckdns.org/update?domains=$DOMAIN&token=$TOKEN&txt=$4"
         echo
         ;;
     "clean_challenge")
-        curl "https://www.duckdns.org/update?domains=$domain&token=$token&txt=removed&clear=true"
+        curl "https://www.duckdns.org/update?domains=$DOMAIN&token=$TOKEN&txt=removed&clear=true"
         echo
         ;;
     "deploy_cert")
