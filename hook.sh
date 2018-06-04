@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 #
 # dns-01 challenge for DuckDNS
