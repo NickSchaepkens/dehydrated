@@ -1,0 +1,8 @@
+# Which challenge should be used? Currently http-01 and dns-01 are supported
+CHALLENGETYPE="dns-01"
+
+# Script to execute the DNS challenge and run after cert generation
+HOOK="/etc/dehydrated/hook.sh"
+
+# Path to certificate authority (default: https://acme-v02.api.letsencrypt.org/directory)
+CA="https://acme-staging.api.letsencrypt.org/directory"
